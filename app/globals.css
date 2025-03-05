@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
 
+@keyframes radialGradientAnimation {
+  0% {
+    background-position: 0% 0%, 100% 0%, 50% 50%, 0% 100%, 100% 100%;
+  }
+  50% {
+    background-position: 100% 0%, 0% 100%, 50% 50%, 100% 100%, 0% 0%;
+  }
+  100% {
+    background-position: 0% 0%, 100% 0%, 50% 50%, 0% 100%, 100% 100%;
+  }
+}
 
 @theme {
   --font-sans: var(--font-geist-sans);
@@ -20,6 +31,35 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent black */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  backdrop-filter: blur(10px); /* Blur effect */
+  position: fixed; /* Ensure it's always visible */
+  top: 15px; /* Give space from top */
+  left: 90%; /* Center it */
+  transform: translateX(-50%); /* Proper centering */
+  height: 55px;
+  width: 80%; /* Expand width */
+  padding: 10px 30px;
+  border-radius: 20px; /* Rounded nav */
+  z-index: 50; /* Ensure it's on top */
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between name and links */
+  align-items: center; /* Center items vertically */
+  font-family: var(--font-paragraph); /* Apply Overpass Mono font */
+}
+
+nav a {
+  font-size: 1.2rem; /* Increase font size */
+  font-weight: semibold; /* Bold font for name */;
+}
+
+nav .name, a{
+  font-size: 1.2rem; /* Larger font size for name */
+  font-weight: semibold; /* Bold font for name */
 }
 
 body {
@@ -46,7 +86,70 @@ p {
   letter-spacing: 0;
 }
 
-
 html {
   scroll-behavior: smooth;
+}
+
+#about, #skills, #portfolio {
+  background-color: #000108;
+}
+
+.project-container {
+  background: linear-gradient(300deg, #000108, #000439); /* Apply gradient background */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.skills-container {
+  background: linear-gradient(180deg, #000108, #000108, #000108, #000439); /* Apply gradient background */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.skills-container:hover, .project-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.home-section {
+  text-align: left; /* Align text to the left */
+  padding-left: 2rem; /* Add padding to the left */
+  padding-top: 5rem; /* Add padding to the top to align with the nav bar */
+  background: linear-gradient(70deg, #000108, #000439); /* Define your gradient colors */
+}
+
+.home-title {
+  font-size: 6rem; /* Make the title bigger */
+  font-weight: 800;
+  margin-left: 7.8rem; /* Align with the nav bar */
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #B597F6, #A6AFF0, #96C6EA); /* Define your gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.home-description {
+  font-weight: 500;
+  font-size: 2rem; /* Make the description bigger */
+  margin-top: -1rem;
+  margin-left: 8rem; /* Align with the nav bar */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-left: 8rem; /* Align with the nav bar */
+}
+
+.social-icons a {
+  font-size: 2rem; /* Size of the social icons */
+  color: white; /* Color of the social icons */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: gray; /* Change color on hover */
 }
