@@ -42,7 +42,7 @@ export default function Home() {
           width={280} 
           height={280} 
           alt="Profile" 
-          className="rounded-full border-4 border-gray-700"
+          className="img-border rounded-full"
           priority
         />
 

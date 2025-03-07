@@ -34,55 +34,54 @@
 }
 
 nav {
-  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent black */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  backdrop-filter: blur(10px); /* Blur effect */
-  position: fixed; /* Ensure it's always visible */
-  top: 15px; /* Give space from top */
-  left: 90%; /* Center it */
-  transform: translateX(-50%); /* Proper centering */
+  background-color: rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  backdrop-filter: blur(10px); 
+  position: fixed; 
+  top: 15px; 
+  left: 90%; 
+  transform: translateX(-50%); 
   height: 55px;
-  width: 80%; /* Expand width */
+  width: 80%; 
   padding: 10px 30px;
-  border-radius: 20px; /* Rounded nav */
-  z-index: 50; /* Ensure it's on top */
-  display: flex; /* Flexbox for alignment */
-  justify-content: space-between; /* Space between name and links */
-  align-items: center; /* Center items vertically */
-  font-family: var(--font-paragraph); /* Apply Overpass Mono font */
+  border-radius: 20px; 
+  z-index: 50; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  font-family: var(--font-paragraph);
 }
 
 nav a {
-  font-size: 1.2rem; /* Increase font size */
-  font-weight: semibold; /* Bold font for name */;
+  font-size: 1.2rem; 
+  font-weight: semibold; 
 }
 
 nav .name, a{
-  font-size: 1.2rem; /* Larger font size for name */
-  font-weight: semibold; /* Bold font for name */
+  font-size: 1.2rem; 
+  font-weight: semibold; 
 }
 
 body {
-  /* font-family: "Poppins", sans-serif; Change from Inter to Poppins */
   color: var(--foreground);
   background: var(--background);
 }
 
 .section-title {
   font-family: var(--font-title);
-  font-weight: 800; /* Adjust as needed */
+  font-weight: 800; 
   font-size: 3rem;
 }
 
 .project-title {
   font-family: var(--font-title);
-  font-weight: 700; /* Adjust as needed */
+  font-weight: 700; 
   font-size: 1.5rem;
 }
 
 p {
   font-family: var(--font-paragraph);
-  font-size: var(--font-r-s); /* Adjust as needed */
+  font-size: var(--font-r-s); 
   letter-spacing: 0;
 }
 
@@ -95,12 +94,12 @@ html {
 }
 
 .project-container {
-  background: linear-gradient(300deg, #000108, #000439); /* Apply gradient background */
+  background: linear-gradient(300deg, #000108, #000439); 
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .skills-container {
-  background: linear-gradient(180deg, #000108, #000108, #000108, #000439); /* Apply gradient background */
+  background: linear-gradient(180deg, #000108, #000108, #000108, #000439);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
@@ -109,17 +108,23 @@ html {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.img-border {
+  background: #000439;
+  padding: 5px; 
+  border-radius: 50%;
+}
+
 .home-section {
-  text-align: left; /* Align text to the left */
-  padding-left: 2rem; /* Add padding to the left */
-  padding-top: 5rem; /* Add padding to the top to align with the nav bar */
-  background: linear-gradient(70deg, #000108, #000439); /* Define your gradient colors */
+  text-align: left; 
+  padding-left: 2rem; 
+  padding-top: 5rem; 
+  background: linear-gradient(70deg, #000108, #000439); 
 }
 
 .home-title {
-  font-size: 6rem; /* Make the title bigger */
+  font-size: 6rem; 
   font-weight: 800;
-  margin-left: 7.8rem; /* Align with the nav bar */
+  margin-left: 7.8rem; 
 }
 
 .gradient-text {
@@ -132,24 +137,24 @@ html {
 
 .home-description {
   font-weight: 500;
-  font-size: 2rem; /* Make the description bigger */
+  font-size: 2rem; 
   margin-top: -1rem;
-  margin-left: 8rem; /* Align with the nav bar */
+  margin-left: 8rem; 
 }
 
 .social-icons {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
-  margin-left: 8rem; /* Align with the nav bar */
+  margin-left: 8rem; 
 }
 
 .social-icons a {
-  font-size: 2rem; /* Size of the social icons */
-  color: white; /* Color of the social icons */
+  font-size: 2rem;
+  color: white;
   transition: color 0.3s;
 }
 
 .social-icons a:hover {
-  color: gray; /* Change color on hover */
+  color: gray; 
 }
