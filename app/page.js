@@ -22,7 +22,7 @@ export default function Home() {
 
       {/* Landing Page */}
       <section id="home" className="home-section h-screen flex flex-col justify-center items-start bg-gradient-to-r from-black via-gray-900 to-black text-white">
-        <h1 className="home-title font-lexend">Hello, I'm <span className="gradient-text">Princess</span></h1>
+        <h1 className="home-title font-lexend">Hello, I&apos;m <span className="gradient-text">Princess</span></h1>
         <p className="home-description font-overpass">
           I design and build meaningful experiences.
         </p>
