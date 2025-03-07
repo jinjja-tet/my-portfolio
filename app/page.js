@@ -63,7 +63,7 @@ export default function Home() {
             <Image src="/pup.png" alt="PUP Logo" width={47} height={47} />
             <Image src="/pup-ccis.png" alt="PUP CCIS Logo" width={50} height={50} />
           </div>
-          <p className="text-lg font-semibold mt-4">Bachelor's Degree in Information Technology</p>
+          <p className="text-lg font-semibold mt-4">Bachelor&apos;s Degree in Information Technology</p>
           <p className="text-gray-400">Polytechnic University of the Philippines</p>
         </div>
       </section>
@@ -75,38 +75,38 @@ export default function Home() {
         <div className="w-full px-10">
           <h3 className="text-xl font-semibold mb-6 text-gray-400 uppercase tracking-widest text-center">Programming Skills</h3>
           <ul className="grid grid-cols-3 gap-6">
-            {[
-              { icon: <FaHtml5 className="text-orange-500" />, name: "HTML" },
-              { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS" },
-              { icon: <FaJs className="text-yellow-400" />, name: "JavaScript" },
-              { icon: <GrMysql className="text-blue-400" />, name: "MySQL" },
-              { icon: <FaPhp className="text-indigo-500" />, name: "PHP" },
-              { icon: <FaPython className="text-yellow-400" />, name: "Python" },
-            ].map((skill, index) => (
-              <li key={index} className="skills-container p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-500 transform hover:scale-102 hover:shadow-xl">
-                <div className="text-5xl mb-2">{skill.icon}</div>
-                <span className="font-medium text-lg font-overpass">{skill.name}</span>
-              </li>
-            ))}
+          {[
+            { icon: <FaHtml5 className="text-orange-500" />, name: "HTML" },
+            { icon: <FaCss3Alt className="text-blue-500" />, name: "CSS" },
+            { icon: <FaJs className="text-yellow-400" />, name: "JavaScript" },
+            { icon: <GrMysql className="text-blue-400" />, name: "MySQL" },
+            { icon: <FaPhp className="text-indigo-500" />, name: "PHP" },
+            { icon: <FaPython className="text-yellow-400" />, name: "Python" },
+          ].map((skill, index) => (
+            <li key={index} className="skills-container p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-500 transform hover:scale-102 hover:shadow-xl">
+              <div className="text-5xl mb-2">{skill.icon}</div>
+              <span className="font-medium text-lg font-overpass">{skill.name}</span>
+            </li>
+          ))}
           </ul>
         </div>
 
         <div className="w-full px-10 mt-12">
           <h3 className="text-xl font-semibold mb-6 text-gray-400 uppercase tracking-widest text-center">Other Skills</h3>
           <ul className="grid grid-cols-3 gap-6">
-            {[
-              { icon: <SiAdobephotoshop className="text-blue-500" />, name: "Photoshop" },
-              { icon: <SiAdobeillustrator className="text-orange-600" />, name: "Illustrator" },
-              { icon: <SiAdobepremierepro className="text-purple-500" />, name: "Premiere Pro" },
-              { icon: <SiFigma className="text-orange-500" />, name: "Figma" },
-              { icon: <SiCanva className="text-blue-400" />, name: "Canva" },
-              { icon: <GiPalette className="text-green-300" />, name: "PaintTool SAI" },
-            ].map((skill, index) => (
-              <li key={index} className="skills-container p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-500 transform hover:scale-102 hover:shadow-xl">
-                <div className="text-5xl mb-2">{skill.icon}</div>
-                <span className="font-medium text-lg font-overpass">{skill.name}</span>
-              </li>
-            ))}
+          {[
+            { icon: <SiAdobephotoshop className="text-blue-500" />, name: "Photoshop" },
+            { icon: <SiAdobeillustrator className="text-orange-600" />, name: "Illustrator" },
+            { icon: <SiAdobepremierepro className="text-purple-500" />, name: "Premiere Pro" },
+            { icon: <SiFigma className="text-orange-500" />, name: "Figma" },
+            { icon: <SiCanva className="text-blue-400" />, name: "Canva" },
+            { icon: <GiPalette className="text-green-300" />, name: "PaintTool SAI" },
+          ].map((skill, index) => (
+            <li key={index} className="skills-container p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-500 transform hover:scale-102 hover:shadow-xl">
+              <div className="text-5xl mb-2">{skill.icon}</div>
+              <span className="font-medium text-lg font-overpass">{skill.name}</span>
+            </li>
+          ))}
           </ul>
         </div>
       </section>
@@ -118,56 +118,56 @@ export default function Home() {
         <p className="text-gray-400 mb-10 font-overpass font-bold">Check out my previous projects</p>
 
         <div className="grid md:grid-cols-3 gap-8 px-10">
-          {[
-            {
-              title: "Gentle Paws",
-              description: "Gentle Paws Pet Veterinary Clinic implements a comprehensive database system to enhance efficiency, ensure accurate record-keeping, and provide personalized care tailored to each pet’s needs.",
-              image: "/1.png",
-              link: "#portfolio",
-              tech: [
-                <FaHtml5 className="text-orange-500 text-2xl" />,
-                <FaCss3Alt className="text-blue-500 text-2xl" />,
-                <FaJs className="text-yellow-400 text-2xl" />,
-                <GrMysql className="text-blue-400 text-2xl" />,
-                <FaPhp className="text-indigo-500 text-2xl" />,
-              ]
-            },
-            {
-              title: "InfoServe",
-              description: "InfoServe is a digital system that streamlines barangay services, including complaints, reservations, announcements, and disaster preparedness, for efficient governance and community access.",
-              image: "/2.png",
-              link: "https://github.com/InfoServe-Services/InfoServe",
-              tech: [
-                <FaHtml5 className="text-orange-500 text-2xl" />,
-                <FaCss3Alt className="text-blue-500 text-2xl" />,
-                <FaJs className="text-yellow-400 text-2xl" />,
-                <GrMysql className="text-blue-400 text-2xl" />,
-                <FaPhp className="text-indigo-500 text-2xl" />,
-              ]
-            },
-            {
-              title: "Ikigai",
-              description: "Ikigai Developers digitizes the Ikigai Scholarship application, converting forms, normalizing data, and creating a structured, user-friendly database for better efficiency and accessibility.",
-              image: "/3.png",
-              link: "#portfolio",
-              tech: [
-                <GrMysql className="text-blue-400 text-2xl" />,
-                <FaPython className="text-indigo-500 text-2xl" />,
-              ]
-            }
-          ].map((project, index) => (
-            <div key={index} className="project-container relative p-6 rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl">
-              <Image src={project.image} alt={project.title} width={400} height={250} className="rounded-lg object-cover mb-4" />
-              <h3 className="text-xl font-bold">{project.title}</h3>
-              <p className="text-gray-400 mt-2 text-sm">{project.description}</p>
-              <div className="flex space-x-3 mt-4">
-                {project.tech.map((techIcon, i) => (
-                  <span key={i} className="transition hover:scale-110">{techIcon}</span>
-                ))}
-              </div>
-              <Link href={project.link} className="mt-4 inline-block text-blue-400 hover:text-blue-600 font-semibold transition">View Project →</Link>
+        {[
+          {
+            title: "Gentle Paws",
+            description: "Gentle Paws Pet Veterinary Clinic implements a comprehensive database system to enhance efficiency, ensure accurate record-keeping, and provide personalized care tailored to each pet’s needs.",
+            image: "/1.png",
+            link: "#portfolio",
+            tech: [
+              <FaHtml5 className="text-orange-500 text-2xl" />,
+              <FaCss3Alt className="text-blue-500 text-2xl" />,
+              <FaJs className="text-yellow-400 text-2xl" />,
+              <GrMysql className="text-blue-400 text-2xl" />,
+              <FaPhp className="text-indigo-500 text-2xl" />,
+            ]
+          },
+          {
+            title: "InfoServe",
+            description: "InfoServe is a digital system that streamlines barangay services, including complaints, reservations, announcements, and disaster preparedness, for efficient governance and community access.",
+            image: "/2.png",
+            link: "https://github.com/InfoServe-Services/InfoServe",
+            tech: [
+              <FaHtml5 className="text-orange-500 text-2xl" />,
+              <FaCss3Alt className="text-blue-500 text-2xl" />,
+              <FaJs className="text-yellow-400 text-2xl" />,
+              <GrMysql className="text-blue-400 text-2xl" />,
+              <FaPhp className="text-indigo-500 text-2xl" />,
+            ]
+          },
+          {
+            title: "Ikigai",
+            description: "Ikigai Developers digitizes the Ikigai Scholarship application, converting forms, normalizing data, and creating a structured, user-friendly database for better efficiency and accessibility.",
+            image: "/3.png",
+            link: "#portfolio",
+            tech: [
+              <GrMysql className="text-blue-400 text-2xl" />,
+              <FaPython className="text-indigo-500 text-2xl" />,
+            ]
+          }
+        ].map((project, index) => (
+          <div key={index} className="project-container relative p-6 rounded-lg shadow-xl transform transition-all hover:scale-105 hover:shadow-2xl">
+            <Image src={project.image} alt={project.title} width={400} height={250} className="rounded-lg object-cover mb-4" />
+            <h3 className="text-xl font-bold">{project.title}</h3>
+            <p className="text-gray-400 mt-2 text-sm">{project.description}</p>
+            <div className="flex space-x-3 mt-4">
+              {project.tech.map((techIcon, i) => (
+                <span key={i} className="transition hover:scale-110">{techIcon}</span>
+              ))}
             </div>
-          ))}
+            <Link href={project.link} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-blue-400 hover:text-blue-600 font-semibold transition">View Project →</Link>
+          </div>
+        ))}
         </div>
       </section>
     </div>
