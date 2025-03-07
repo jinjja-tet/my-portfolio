@@ -82,8 +82,8 @@ export default function Home() {
             { icon: <GrMysql className="text-blue-400" />, name: "MySQL" },
             { icon: <FaPhp className="text-indigo-500" />, name: "PHP" },
             { icon: <FaPython className="text-yellow-400" />, name: "Python" },
-          ].map((skill, index) => (
-            <li key={index} className="skills-container p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-500 transform hover:scale-102 hover:shadow-xl">
+          ].map((skill) => (
+            <li key={skill.name} className="skills-container p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-500 transform hover:scale-102 hover:shadow-xl">
               <div className="text-5xl mb-2">{skill.icon}</div>
               <span className="font-medium text-lg font-overpass">{skill.name}</span>
             </li>
@@ -101,8 +101,8 @@ export default function Home() {
             { icon: <SiFigma className="text-orange-500" />, name: "Figma" },
             { icon: <SiCanva className="text-blue-400" />, name: "Canva" },
             { icon: <GiPalette className="text-green-300" />, name: "PaintTool SAI" },
-          ].map((skill, index) => (
-            <li key={index} className="skills-container p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-500 transform hover:scale-102 hover:shadow-xl">
+          ].map((skill) => (
+            <li key={skill.name} className="skills-container p-6 rounded-lg shadow-lg flex flex-col items-center transition-transform duration-500 transform hover:scale-102 hover:shadow-xl">
               <div className="text-5xl mb-2">{skill.icon}</div>
               <span className="font-medium text-lg font-overpass">{skill.name}</span>
             </li>
@@ -162,7 +162,7 @@ export default function Home() {
             <p className="text-gray-400 mt-2 text-sm">{project.description}</p>
             <div className="flex space-x-3 mt-4">
               {project.tech.map((techIcon, i) => (
-                <span key={i} className="transition hover:scale-110">{techIcon}</span>
+                <span key={`tech-${project.title}-${i}`} className="transition hover:scale-110">{techIcon}</span>
               ))}
             </div>
             <Link href={project.link} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-blue-400 hover:text-blue-600 font-semibold transition">View Project →</Link>
