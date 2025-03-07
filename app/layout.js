@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portofolio | Princess Denise M. Ong",
+  title: "Portfolio | Princess Denise M. Ong",
   description: "",
 };
 
